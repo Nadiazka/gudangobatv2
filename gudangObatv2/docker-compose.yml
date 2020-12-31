@@ -2,12 +2,19 @@ version: "3.7"
    
 services:
   db:
+    restart: always
     image: postgres
     environment:
       - POSTGRES_DB=gudangObat
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=1111
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data/
+      
   web:
+    restart: always
     build: .
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
