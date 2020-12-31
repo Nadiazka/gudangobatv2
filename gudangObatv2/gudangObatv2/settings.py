@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '3ro(1$4q+40-te68w^^eco1)s4g&5jwn!s2h&%i0^3%y7iv7hi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -40,36 +40,18 @@ INSTALLED_APPS = [
     'accounts',
     'gudangObatService',
     "rest_framework",
-    "rest_framework.authtoken",
-    "corsheaders",
     "django.contrib.sites",
     # Auth & social auth
-    "dj_rest_auth",
     "allauth",
     "allauth.account",
-    "dj_rest_auth.registration",
     "allauth.socialaccount",
     "allauth.socialaccount.providers.google",
 ]
 
-SOCIALACCOUNT_EMAIL_VERIFICATION = "none"
-SOCIALACCOUNT_EMAIL_REQUIRED = False
-
-REST_USE_JWT = True
 
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = '/login'
-
-from datetime import timedelta
-
-SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
-    'ROTATE_REFRESH_TOKENS': True, # IMPORTANT
-    'BLACKLIST_AFTER_ROTATION': True, # IMPORTANT
-    'UPDATE_LAST_LOGIN': True,
-}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -81,7 +63,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-#CORS_ORIGIN_ALLOW_ALL = True
+
 ROOT_URLCONF = 'gudangObatv2.urls'
 
 CORS_ORIGIN_ALLOW_ALL = True
@@ -144,7 +126,6 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework.authentication.BasicAuthentication",
         "rest_framework.authentication.SessionAuthentication",
-        'dj_rest_auth.jwt_auth.JWTCookieAuthentication',
     ),
 }
 # Internationalization

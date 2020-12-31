@@ -9,19 +9,19 @@ from django.utils.decorators import method_decorator
 
 
 @method_decorator(login_required, name='dispatch')
-class DrugsView(generics.ListCreateAPIView):
+class DrugsView(generics.ListCreateAPIView, generics.RetrieveUpdateDestroyAPIView):
 	#permission_classes = [permissions.IsAuthenticated, TokenHasReadWriteScope]
 	queryset = Drugs.objects.all()
 	serializer_class = DrugsSerializer
 
 @method_decorator(login_required, name='dispatch')
-class PuskesmasView(generics.ListCreateAPIView):
+class PuskesmasView(generics.ListCreateAPIView, generics.RetrieveUpdateDestroyAPIView):
 	#permission_classes = [permissions.IsAuthenticated, TokenHasReadWriteScope]
 	queryset = Puskesmas.objects.all()
 	serializer_class = PkmSerializer
 
 @method_decorator(login_required, name='dispatch')
-class DrugsQuantityView(generics.ListCreateAPIView):
+class DrugsQuantityView(generics.ListCreateAPIView, generics.RetrieveUpdateDestroyAPIView):
 	#permission_classes = [permissions.IsAuthenticated, TokenHasReadWriteScope]
 	queryset = DrugsQuantity.objects.all()
 	serializer_class = DQSerializer

@@ -1,108 +1,33 @@
-asgiref==3.2.3
-asn1crypto==0.24.0
-atomicwrites==1.4.0
-attrs==19.3.0
-branca==0.4.0
-certifi==2020.4.5.1
-cffi==1.12.2
-chardet==3.0.4
-click==7.1.1
-click-plugins==1.1.1
-cligj==0.5.0
-colorama==0.4.3
-conda==4.8.3
-conda-package-handling==1.6.0
-coverage==4.0.3
-cryptography==2.6.1
-decorator==4.4.2
+asgiref @ file:///home/conda/feedstock_root/build_artifacts/asgiref_1605523041333/work
+blinker==1.4
+brotlipy==0.7.0
+certifi==2020.12.5
+cffi @ file:///D:/bld/cffi_1606601387305/work
+chardet @ file:///D:/bld/chardet_1607673982459/work
+cryptography @ file:///D:/bld/cryptography_1607606473081/work
 defusedxml==0.6.0
-diff-match-patch==20181111
-dj-rest-auth==2.1.2
-Django==3.0.3
-django-allauth==0.44.0
-django-automated-logging==5.0.1
-django-cors-headers==3.6.0
-django-cors-middleware==1.5.0
-django-excel==0.0.10
-django-filter==2.2.0
-django-geojson==2.12.0
-django-import-export==2.0.2
-django-json-tag==0.0.1
-django-jsonfield==1.4.0
-django-leaflet==0.26.0
-django-oauth-toolkit==1.3.3
-django-object-actions==2.0.0
-django-rpy2==0.7.1
-django-softdelete-it==0.1
-djangorestframework==3.11.0
-djangorestframework-gis==0.15
-djangorestframework-simplejwt==4.6.0
-et-xmlfile==1.0.1
-Fiona==1.8.9.post2
-folium==0.10.1
-geopandas==0.7.0
-idna==2.8
-importlib-metadata==1.6.1
-jdcal==1.4.1
-Jinja2==2.11.1
-joblib==0.14.1
-jsonfield==3.1.0
-lml==0.0.9
-Markdown==3.2.1
-MarkupPy==1.14
-MarkupSafe==1.1.1
-menuinst==1.4.16
-more-itertools==8.3.0
-munch==2.5.0
-mysqlclient==1.4.6
-networkx==2.4
-numpy==1.18.1
-oauthlib==3.1.0
-odfpy==1.4.1
-openpyxl==3.0.3
-packaging==20.4
-pandas==1.0.3
-pluggy==0.13.1
-pomegranate==0.12.2
+Django @ file:///home/conda/feedstock_root/build_artifacts/django_1606808783925/work
+django-allauth==0.41.0
+django-cors-headers @ file:///home/conda/feedstock_root/build_artifacts/django-cors-headers_1593129968237/work
+django-filter @ file:///home/conda/feedstock_root/build_artifacts/django-filter_1601214336459/work
+djangorestframework @ file:///home/conda/feedstock_root/build_artifacts/djangorestframework_1601312268278/work
+gunicorn==20.0.4
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1593328102638/work
+importlib-metadata @ file:///D:/bld/importlib-metadata_1607976164683/work
+Markdown @ file:///home/conda/feedstock_root/build_artifacts/markdown_1603668500820/work
+oauthlib==3.0.1
 psycopg2==2.8.6
-py==1.8.1
-pycosat==0.6.3
-pycparser==2.19
-pyexcel==0.6.1
-pyexcel-io==0.5.20
-pyexcel-webio==0.1.4
-pyexcel-xls==0.5.8
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1593275161868/work
 PyJWT==1.7.1
-pyOpenSSL==19.0.0
-pyparsing==2.4.7
-pyproj==2.5.0
-pyRserve==0.9.2
-PySocks==1.6.8
-pytest==5.4.3
-python-dateutil==2.8.1
-python3-openid==3.2.0
-pytz==2019.3
-pywin32==223
-PyYAML==5.3.1
-requests==2.21.0
-requests-oauthlib==1.3.0
-rpy2==3.3.3
-Rtree==0.9.4
-ruamel-yaml==0.15.46
-scipy==1.4.1
-Shapely==1.7.0
-simplejson==3.17.0
-six==1.12.0
-soft-delete==0.2.2
-sqlparse==0.3.0
-tablib==1.1.0
-texttable==1.6.2
-tqdm==4.43.0
-tzlocal==2.1
-urllib3==1.24.1
-wcwidth==0.2.4
-win-inet-pton==1.1.0
+pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1608055815057/work
+PySocks @ file:///D:/bld/pysocks_1602327203253/work
+python3-openid @ file:///D:/bld/python3-openid_1602327014813/work
+pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1608904108784/work
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1608156231189/work
+requests-oauthlib @ file:///home/conda/feedstock_root/build_artifacts/requests-oauthlib_1595492159598/work
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1590081179328/work
+sqlparse @ file:///home/conda/feedstock_root/build_artifacts/sqlparse_1602142927465/work
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1605225765842/work
+win-inet-pton @ file:///D:/bld/win_inet_pton_1602260267949/work
 wincertstore==0.2
-xlrd==1.2.0
-xlwt==1.3.0
-zipp==3.1.0
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1603668650351/work

@@ -7,9 +7,10 @@ from django.db import transaction
 from django.forms.models import inlineformset_factory
 from django.core.exceptions import PermissionDenied
 from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter
-from dj_rest_auth.registration.views import SocialLoginView
 from allauth.socialaccount.providers.oauth2.client import OAuth2Client
 from django.conf import settings
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 # Create your views here.
 @transaction.atomic
@@ -55,9 +56,3 @@ def loginPage(request):
 def logoutUser(request):
 	logout(request)
 	return redirect('login')
-
-class GoogleLogin(SocialLoginView):
-    authentication_classes = [] # disable authentication
-    adapter_class = GoogleOAuth2Adapter
-    callback_url = "http://localhost:8000"
-    client_class = OAuth2Client
