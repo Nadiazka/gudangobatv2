@@ -11,14 +11,15 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - pgdata:/var/lib/postgresql/data/
-      
+      - ./pgdata:/var/lib/postgresql/data/
+
   web:
     restart: always
     build: .
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
-      - .:/gudangObatv2
+      - ./web-django:/usr/src/app
+      - ./web-static:/usr/src/app/static
     ports:
       - "8000:8000"
     depends_on:
