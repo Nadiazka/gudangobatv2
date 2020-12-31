@@ -92,11 +92,11 @@ WSGI_APPLICATION = 'gudangObatv2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'gudangObat',
         'USER': 'postgres',
         'PASSWORD': '1111',
-        'HOST': '0.0.0.0',
+        'HOST': 'db',
         'PORT': '5432',
         }
 }
