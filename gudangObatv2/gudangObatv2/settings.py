@@ -96,7 +96,7 @@ DATABASES = {
         'NAME': 'gudangObat',
         'USER': 'postgres',
         'PASSWORD': '1111',
-        'HOST': 'localhost',
+        'HOST': 'db',
         'PORT': '5432',
         }
 }
