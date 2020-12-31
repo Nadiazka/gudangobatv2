@@ -2,6 +2,7 @@ version: "3.7"
    
 services:
   db:
+    container_name: postgresql
     restart: always
     image: postgres
     environment:
@@ -14,6 +15,7 @@ services:
       - ./pgdata:/var/lib/postgresql/data/
 
   web:
+    container_name : webGudangObat
     restart: always
     build: .
     command: python manage.py runserver 0.0.0.0:8000
@@ -24,3 +26,7 @@ services:
       - "8000:8000"
     depends_on:
       - db
+    environment:
+      - POSTGRES_PASSWORD=1111
+      - POSTGRES_PORT_5432_TCP_ADDR=postgresql
+      - POSTGRES_PORT_5432_TCP_PORT=5432
