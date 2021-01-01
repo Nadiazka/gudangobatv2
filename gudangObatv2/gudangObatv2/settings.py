@@ -95,9 +95,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'gudangObat',
         'USER': 'postgres',
-        'PASSWORD': 'postgres',
+        'PASSWORD': '1111',
         'HOST': 'db',
-        'PORT': '5432',
+        'PORT': '5433',
         }
 }
 
