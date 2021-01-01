@@ -8,7 +8,7 @@ services:
     environment:
       - POSTGRES_DB=gudangObat
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=1111
+      - POSTGRES_PASSWORD=postgres
     ports:
       - "5432:5432"
     volumes:
@@ -27,6 +27,6 @@ services:
     depends_on:
       - db
     environment:
-      - POSTGRES_PASSWORD=1111
+      - POSTGRES_PASSWORD=postgres
       - POSTGRES_PORT_5432_TCP_ADDR=postgresql
       - POSTGRES_PORT_5432_TCP_PORT=5432
