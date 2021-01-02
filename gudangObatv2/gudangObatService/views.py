@@ -13,18 +13,18 @@ class DrugsView(generics.ListCreateAPIView, generics.RetrieveUpdateDestroyAPIVie
 	#permission_classes = [permissions.IsAuthenticated, TokenHasReadWriteScope]
 	queryset = Drugs.objects.all()
 	serializer_class = DrugsSerializer
-	lookup_fields = ['kodeObat']
+	lookup_field = ['kodeObat']
 
 @method_decorator(login_required, name='dispatch')
 class PuskesmasView(generics.ListCreateAPIView, generics.RetrieveUpdateDestroyAPIView):
 	#permission_classes = [permissions.IsAuthenticated, TokenHasReadWriteScope]
 	queryset = Puskesmas.objects.all()
 	serializer_class = PkmSerializer
-	lookup_fields = ['kodePkm']
+	lookup_field = ['kodePkm']
 
 @method_decorator(login_required, name='dispatch')
 class DrugsQuantityView(generics.ListCreateAPIView, generics.RetrieveUpdateDestroyAPIView):
 	#permission_classes = [permissions.IsAuthenticated, TokenHasReadWriteScope]
 	queryset = DrugsQuantity.objects.all()
 	serializer_class = DQSerializer
-	lookup_fields = ['DQid']
+	lookup_field = ['pk']

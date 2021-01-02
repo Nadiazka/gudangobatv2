@@ -16,7 +16,6 @@ class Puskesmas (models.Model):
 		return self.kodePkm
 
 class DrugsQuantity (models.Model):
-	DQid = models.SmallAutoField( primary_key=True)
 	kodeObat = models.ForeignKey(Drugs, on_delete=models.CASCADE)
 	kodePkm = models.ForeignKey(Puskesmas, on_delete=models.CASCADE)
 	jumlah = models.PositiveIntegerField()
