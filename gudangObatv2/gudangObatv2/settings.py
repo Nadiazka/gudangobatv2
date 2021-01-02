@@ -22,6 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '3ro(1$4q+40-te68w^^eco1)s4g&5jwn!s2h&%i0^3%y7iv7hi'
 
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -173,3 +174,6 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
