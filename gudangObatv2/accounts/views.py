@@ -47,7 +47,7 @@ def loginPage(request):
 
 		if user is not None:
 			login(request, user)
-			return redirect('$')
+			return redirect('/')
 		else:
 			messages.info(request, 'Username atau Password salah')
 
