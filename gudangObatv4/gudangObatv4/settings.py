@@ -93,6 +93,17 @@ WSGI_APPLICATION = 'gudangObatv4.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME' : 'dg56gis4e6e2g',
+        'USER' :'kpwrytigrcqktv',
+        'PASSWORD' :'296aae44c49d060ce8ca36e0e7bd0cb77a12dd332c9140af013c4f8ace198c20',
+        'HOST' :'ec2-52-203-49-58.compute-1.amazonaws.com',
+        'PORT' : '5432',
+    }
+}
+
+"""
+    'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'gudangObat',
         'USER': 'postgres',
@@ -100,8 +111,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432',
         }
-}
-
+    """
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
